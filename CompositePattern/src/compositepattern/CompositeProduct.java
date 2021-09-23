@@ -17,11 +17,13 @@ public class CompositeProduct extends AbstractProduct {
     public CompositeProduct(String pName, double pPrice){
         this.name = pName;
         this.price = pPrice;
+        this.children = new ArrayList<AbstractProduct>();
     }
     
     public CompositeProduct(String pName){
         this.name = pName;
         this.price = 0;
+        this.children = new ArrayList<AbstractProduct>();
     }
     
     public ArrayList<AbstractProduct> getChildren() {
