@@ -18,7 +18,12 @@ public class CompositeProduct extends AbstractProduct {
         this.name = pName;
         this.price = pPrice;
     }
-
+    
+    public CompositeProduct(String pName){
+        this.name = pName;
+        this.price = 0;
+    }
+    
     public ArrayList<AbstractProduct> getChildren() {
         return children;
     }

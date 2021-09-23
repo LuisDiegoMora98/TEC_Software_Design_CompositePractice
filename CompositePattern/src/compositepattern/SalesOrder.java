@@ -20,7 +20,12 @@ public class SalesOrder {
     public SalesOrder() {
         this.products = new ArrayList<>();
     }
-
+    
+    public SalesOrder(long orderId, String customer) {
+        this.orderId = orderId;
+        this.customer = customer;
+        this.products = new ArrayList<>();
+    }
     public SalesOrder(long orderId, String customer, ArrayList<AbstractProduct> products) {
         this.orderId = orderId;
         this.customer = customer;
