@@ -109,6 +109,12 @@ public class CompositeMain {
     }
         
     public static void main(String[] args) {
+        
+        /*
+        Natalia Vargas Reyes
+        Luis Diego Alemán
+        Luis Diego Mora
+        */
         CompositeMain main = new CompositeMain();
         main.buildProducts();
         main.orderSimpleProducts();

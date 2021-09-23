@@ -70,7 +70,7 @@ public class SalesOrder {
 
     public void  printOrder(){
         for(AbstractProduct product : this.products){
-            System.out.println("SalesOrder: " + "orderId=" + orderId + ", customer:" + customer + ", products: " );
+            System.out.println("SalesOrder: " + "orderId=" + orderId + ", customer:" + customer + ", total: " +getPrice() +", products: " );
             System.out.println(product.toString());
         }
     }
