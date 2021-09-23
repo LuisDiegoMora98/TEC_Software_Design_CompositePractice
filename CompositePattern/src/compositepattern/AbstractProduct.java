@@ -36,6 +36,12 @@ public abstract class AbstractProduct {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "AbstractProduct{" + "name= " + getName() + ", price= " + getPrice() + '}';
+    }
+    
     
     
 }
