@@ -49,7 +49,7 @@ public class CompositeProduct extends AbstractProduct {
 
     @Override
     public String toString() {
-        return "CompositeProduct{name= " + getName() + ", price= " + getPrice() + ", children=" + children + '}';
+        return "    CompositeProduct{   name= " + getName() + ", price= " + getPrice() + ", children=" + children + '}';
     }
 
     

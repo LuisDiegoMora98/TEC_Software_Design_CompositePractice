@@ -30,6 +30,6 @@ public class SimpleProduct extends AbstractProduct {
     @Override
     public String toString(){
         
-        return "Name: " + super.getName() +  "Price: " + super.getPrice() + "brand" + brand;
+        return "    SimpleProduct{Name: " + super.getName() +  ", price: " + super.getPrice() + ", brand" + brand + "}";
     }
 }
