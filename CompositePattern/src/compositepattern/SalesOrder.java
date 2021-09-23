@@ -5,10 +5,69 @@
  */
 package compositepattern;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Natalia
  */
-public class SalesOrder extends AbstractProduct{
+public class SalesOrder {
+    
+    private long orderId;
+    private String customer;
+    private ArrayList<AbstractProduct> products;
+
+    public SalesOrder() {
+        this.products = new ArrayList<>();
+    }
+
+    public SalesOrder(long orderId, String customer, ArrayList<AbstractProduct> products) {
+        this.orderId = orderId;
+        this.customer = customer;
+        this.products = products;
+    }
+
+    public long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(long orderId) {
+        this.orderId = orderId;
+    }
+
+    public String getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(String customer) {
+        this.customer = customer;
+    }
+
+    public ArrayList<AbstractProduct> getProducts() {
+        return products;
+    }
+
+    public void setProducts(ArrayList<AbstractProduct> products) {
+        this.products = products;
+    }
+    
+    public double getPrice(){
+        double totalPrice = 0;
+        for(AbstractProduct product : this.products){
+            totalPrice += product.getPrice();
+        }
+        return totalPrice;
+    }
+    
+    public void addProduct(AbstractProduct product){
+        this.products.add(product);
+    }
+
+    @Override
+    public String toString() {
+        return "SalesOrder{" + "orderId=" + orderId + ", customer=" + customer + ", products=" + products + '}';
+    }
+    
+   
     
 }
