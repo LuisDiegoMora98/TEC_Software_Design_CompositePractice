@@ -28,7 +28,8 @@ public class SimpleProduct extends AbstractProduct {
     
     
     @Override
-    public void toString(){
-        System.out.println("Name: " + super.getName() +  "Price: " + super.getPrice() + "brand" + brand);
+    public String toString(){
+        
+        return "Name: " + super.getName() +  "Price: " + super.getPrice() + "brand" + brand;
     }
 }
