@@ -68,11 +68,13 @@ public class SalesOrder {
         this.products.add(product);
     }
 
-    @Override
-    public String toString() {
-        return "SalesOrder{" + "orderId=" + orderId + ", customer=" + customer + ", products=" + products + '}';
+    public void  printOrder(){
+        for(AbstractProduct product : this.products){
+            System.out.println("SalesOrder: " + "orderId=" + orderId + ", customer:" + customer + ", products: " );
+            product.toString();
+        }
     }
-    
+
    
     
 }
