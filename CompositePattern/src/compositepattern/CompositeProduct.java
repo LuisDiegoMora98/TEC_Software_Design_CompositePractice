@@ -44,4 +44,13 @@ public class CompositeProduct extends AbstractProduct {
         }
         return total;
     }
+
+    @Override
+    public String toString() {
+        return "CompositeProduct{name= " + getName() + ", price= " + getPrice() + ", children=" + children + '}';
+    }
+
+    
+    
+    
 }
